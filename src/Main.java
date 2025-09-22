@@ -5,8 +5,10 @@ void main() {
     // to see how IntelliJ IDEA suggests fixing it.
     double purchasePrice = 25.35;
     final double SALES_TAX = 0.05;
-    double finalPrice = purchasePrice * SALES_TAX;
+    double computedTax = purchasePrice * SALES_TAX;
+    double finalPrice = purchasePrice + computedTax;
 
+    System.out.println("Your computed sales tax is $" + computedTax);
     System.out.println("Your final price is $" + finalPrice);
     }
 
